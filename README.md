@@ -28,3 +28,30 @@ B站用户通过发送以下代码就可以播放/切换歌曲
 ```
 
 ##info English
+
+My English not good,if you know up,you can read this,my chinese english,sorry.
+
+This is BiliBili Song machine,it use Selenium,it is google chrome Remote control.
+
+SeleniumUtils.java -> Tool class
+
+BiliBiliMain.java -> main thread to read bilibili Barrage
+
+PlayWYMusic.jav -> NetEase Music thread,read `musicId` in main thread to play music,Get the music ID in the address bar by visiting Netease on the web
+
+chromedriver.exe -> It's driven by Google browser. It's different in different systems. The version of Google browser also needs to be corresponding
+[**Driver address**](http://chromedriver.storage.googleapis.com/index.html)
+
+bilibi.json -> config file
+
+```json
+{
+  "name":"bilibiliJsonFile",
+  "url":"https://live.bilibili.com/14247985"//Live address
+}
+```
+
+Bilibili users can play / switch songs by sending the following code
+```
+音乐123456
+```
